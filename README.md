@@ -147,7 +147,7 @@ This project is open source and available under the [MIT License](LICENSE).
 - Email: ransilu.deelaka@gmail.com
 - Phone: +94 71 202 6132
 - LinkedIn: [deelaka-ransilu](https://www.linkedin.com/in/deelaka-ransilu/)
-- GitHub: [deelaka-24](https://github.com/deelaka-24)
+- GitHub: [deelaka-24](https://github.com/deelaka-ransilu)
 
 ---
 
