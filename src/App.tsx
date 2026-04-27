@@ -10,6 +10,7 @@ import { Contact } from './components/Contact'
 import { Footer } from './components/Footer'
 // @ts-ignore - CSS import is handled by the bundler.
 import './index.css'
+import { DevOps } from './components/DevOps'
 
 export default function App() {
   useLenis()
@@ -22,6 +23,7 @@ export default function App() {
         <Hero />
         <Marquee />
         <Skills />
+        <DevOps />
         <Experience />
         <Project />
         <Contact />

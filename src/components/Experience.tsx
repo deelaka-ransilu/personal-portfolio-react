@@ -5,7 +5,7 @@ const bullets = [
   'Managed user accounts, permissions, and access control under senior system administrator guidance',
   'Performed routine system health checks and maintenance activities to ensure high availability',
   'Handled incident escalation following SOPs with accurate reporting and documentation',
-  'Supported basic network connectivity troubleshooting and communicated issues clearly to stakeholders',
+  'Supported basic network connectivity troubleshooting and Gained hands-on exposure to IT infrastructure operations, system monitoring workflows, and incident management practices aligned with SRE principles',
 ]
 
 export function Experience() {

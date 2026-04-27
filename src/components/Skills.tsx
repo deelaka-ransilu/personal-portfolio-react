@@ -3,18 +3,18 @@ import { useReveal } from '../hooks/useReveal'
 const cards = [
   {
     icon: '[ ~ ]',
-    title: 'Linux & System Admin',
-    body: 'Ubuntu daily driver · CLI · file system · users/permissions · process mgmt · shell scripting · logs',
+    title: 'Linux & DevOps',
+    body: 'Ubuntu daily · CLI · users/permissions · process mgmt · Docker · GitHub Actions CI/CD · shell scripting · log analysis',
   },
   {
     icon: '{ }',
-    title: 'Backend Development',
-    body: 'Spring Boot · Java · REST API · JWT auth · RBAC · PostgreSQL · MSSQL · Maven',
+    title: 'Full-Stack Development',
+    body: 'Spring Boot · Java · REST API · JWT auth · RBAC · PostgreSQL · MSSQL · Maven·  Next.js · React · TypeScript · Tailwind CSS · shadcn/ui · REST integrations',
   },
   {
     icon: '</>',
-    title: 'Frontend Development',
-    body: 'Next.js · React · TypeScript · Tailwind CSS · shadcn/ui · REST integrations',
+    title: 'Cloud & Tools',
+    body: 'AWS Free Tier · GitHub Actions · Docker · Git · Maven · Linux shell · basic networking (IP, DNS, HTTP)',
   },
   {
     icon: '≈ py',

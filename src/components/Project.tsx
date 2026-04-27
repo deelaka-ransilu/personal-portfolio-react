@@ -6,9 +6,12 @@ const tags = [
 ]
 
 const metrics = [
-  { val: '66', label: 'Functional Reqs' },
-  { val: '5+', label: 'Integrations' },
-  { val: '27', label: 'UI Screens' },
+  { val: '66',    label: 'Functional Reqs' },
+  { val: '5+',    label: 'Integrations' },
+  { val: 'CI/CD', label: 'GitHub Actions' },
+  { val: 'OAuth', label: 'Google Auth' },
+  { val: 'CDN',   label: 'Cloudinary' },
+  { val: '27',    label: 'UI Screens' },
 ]
 
 export function Project() {
@@ -61,7 +64,7 @@ export function Project() {
           <p className="px-8 pt-4 pb-6 text-sm leading-7 max-w-2xl" style={{ color: 'var(--muted)' }}>
             A full-stack web application built in a Linux environment. Includes secure REST APIs with JWT
             auth, role-based access control, real-time PostgreSQL management, PayHere payment integration,
-            Google Calendar sync, and Cloudinary media handling.
+            Google Calendar sync, and Cloudinary media handling with an automated GitHub Actions CI/CD pipeline for build and deployment.
           </p>
 
           {/* tags */}
@@ -86,25 +89,27 @@ export function Project() {
           </div>
 
           {/* metrics */}
-          <div
-            className="grid grid-cols-3"
-            style={{ borderTop: '1px solid var(--border)' }}
-          >
-            {metrics.map((m, i) => (
-              <div
-                key={m.label}
-                className="py-5 text-center"
-                style={{ borderRight: i < 2 ? '1px solid var(--border)' : 'none' }}
-              >
-                <div className="text-2xl font-extrabold tracking-tight" style={{ color: 'var(--accent)', letterSpacing: '-0.04em' }}>
-                  {m.val}
-                </div>
-                <div className="font-mono text-[10px] tracking-widest uppercase mt-1" style={{ color: 'var(--muted)' }}>
-                  {m.label}
-                </div>
-              </div>
-            ))}
-          </div>
+          <div className="grid grid-cols-3 border-t border-[var(--border)]">
+  {metrics.map((m) => (
+    <div
+      key={m.label}
+      className="py-5 text-center border border-[var(--border)] border-t-0"
+    >
+      <div
+        className="text-2xl font-extrabold tracking-tight"
+        style={{ color: 'var(--accent)', letterSpacing: '-0.04em' }}
+      >
+        {m.val}
+      </div>
+      <div
+        className="font-mono text-[10px] tracking-widest uppercase mt-1"
+        style={{ color: 'var(--muted)' }}
+      >
+        {m.label}
+      </div>
+    </div>
+  ))}
+</div>
         </div>
       </div>
     </section>

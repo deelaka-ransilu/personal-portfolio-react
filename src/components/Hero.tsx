@@ -29,7 +29,7 @@ export function Hero() {
         className="mb-5 font-mono text-xs tracking-[.22em] uppercase"
         style={{ color: 'var(--accent)', ...anim(0) }}
       >
-        DevOps Learner
+        DevOps / SRE · Linux · Full-Stack Developer
       </p>
 
       {/* name */}
@@ -45,10 +45,10 @@ export function Hero() {
         className="max-w-lg text-lg leading-8 mb-10"
         style={{ color: 'var(--muted)', ...anim(250) }}
       >
-        Final-year BIT student at University of Moratuwa. Building real-world
-        systems on Linux — from REST APIs to full-stack platforms. Passionate
-        about system administration, DevOps, and modern web development.
-      </p>
+        Final-year BIT student at University of Moratuwa. I build and deploy 
+production-grade systems on Linux — from REST APIs to full-stack platforms 
+with CI/CD pipelines, containerization, and cloud integrations. Passionate 
+about DevOps, site reliability, and modern infrastructure.</p>
 
       {/* CTAs */}
       <div className="flex flex-wrap gap-3" style={anim(380)}>
