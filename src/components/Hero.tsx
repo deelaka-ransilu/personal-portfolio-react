@@ -45,10 +45,11 @@ export function Hero() {
         className="max-w-lg text-lg leading-8 mb-10"
         style={{ color: 'var(--muted)', ...anim(250) }}
       >
-        Final-year BIT student at University of Moratuwa. I build and deploy 
-production-grade systems on Linux — from REST APIs to full-stack platforms 
-with CI/CD pipelines, containerization, and cloud integrations. Passionate 
-about DevOps, site reliability, and modern infrastructure.</p>
+        Final-year BIT student at University of Moratuwa. I build and deploy
+        production-grade systems on Linux — from REST APIs to full-stack platforms
+        with CI/CD pipelines, containerization, and cloud integrations. Passionate
+        about DevOps, site reliability, and modern infrastructure.
+      </p>
 
       {/* CTAs */}
       <div className="flex flex-wrap gap-3" style={anim(380)}>
@@ -75,6 +76,22 @@ about DevOps, site reliability, and modern infrastructure.</p>
           }}
         >
           LinkedIn
+        </a>
+        <a
+          href="/portfolio/Deelaka_Ransilu_DevOps_CV.pdf"
+          download
+          className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-mono text-sm transition-all duration-200 hover:-translate-y-0.5"
+          style={{ border: '1px solid var(--border)', color: 'var(--muted)' }}
+          onMouseEnter={(e) => {
+            e.currentTarget.style.borderColor = 'var(--muted)'
+            e.currentTarget.style.color = 'var(--text)'
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.borderColor = 'var(--border)'
+            e.currentTarget.style.color = 'var(--muted)'
+          }}
+        >
+          Download CV ↓
         </a>
       </div>
 
