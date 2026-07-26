@@ -28,11 +28,26 @@ const rsvpMetrics = [
   { val: 'PG',     label: 'Supabase DB' },
 ]
 
+const bitprepTags = [
+  'Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Vercel',
+  'Tailwind CSS',
+]
+
+const bitprepMetrics = [
+  { val: 'Live',   label: 'Production' },
+  { val: 'Free',   label: 'For Students' },
+  { val: 'CI/CD',  label: 'Vercel Deploy' },
+  { val: 'Prisma', label: 'ORM' },
+  { val: 'PG',     label: 'PostgreSQL DB' },
+  { val: 'UOM',    label: 'BIT Community' },
+]
+
 export function Project() {
   const labelRef = useReveal()
   const titleRef = useReveal(1)
   const cardRef  = useReveal(2)
   const card2Ref = useReveal(3)
+  const card3Ref = useReveal(3)
 
   const cardHover = {
     onMouseEnter: (e: React.MouseEvent<HTMLDivElement>) => {
@@ -105,6 +120,80 @@ export function Project() {
 
             <div className="grid grid-cols-3 border-t border-[var(--border)]">
               {metrics.map((m) => (
+                <div key={m.label} className="py-5 text-center border border-[var(--border)] border-t-0">
+                  <div className="text-2xl font-extrabold tracking-tight" style={{ color: 'var(--accent)', letterSpacing: '-0.04em' }}>
+                    {m.val}
+                  </div>
+                  <div className="font-mono text-[10px] tracking-widest uppercase mt-1" style={{ color: 'var(--muted)' }}>
+                    {m.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ── BitPrep Card ── */}
+          <div
+            ref={card3Ref}
+            className="rounded-2xl overflow-hidden transition-all duration-300"
+            style={{ border: '1px solid var(--border)', background: 'var(--bg2)' }}
+            {...cardHover}
+            data-cursor-hover
+          >
+            <div className="p-8 pb-0 flex justify-between items-start flex-wrap gap-4">
+              <div>
+                <h3 className="text-2xl font-bold tracking-tight mb-1" style={{ letterSpacing: '-0.03em' }}>
+                  BitPrep
+                </h3>
+                <a
+                  href="https://bitprep.tech"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-mono text-[11px] tracking-wide transition-colors duration-200"
+                  style={{ color: 'var(--muted)' }}
+                  onMouseEnter={(e) => (e.currentTarget.style.color = 'var(--accent)')}
+                  onMouseLeave={(e) => (e.currentTarget.style.color = 'var(--muted)')}
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  bitprep.tech ↗
+                </a>
+              </div>
+              <span
+                className="font-mono text-[11px] tracking-wide px-3 py-1.5 rounded-full border"
+                style={{ background: 'rgba(163,230,53,0.08)', color: 'var(--accent)', borderColor: 'rgba(163,230,53,0.25)' }}
+              >
+                ● Live
+              </span>
+            </div>
+
+            <p className="px-8 pt-4 pb-6 text-sm leading-7 max-w-2xl" style={{ color: 'var(--muted)' }}>
+              A free exam-prep platform built for University of Moratuwa BIT students, covering quizzes and
+              study materials across multiple subjects. Built and maintained end-to-end, from schema design
+              to production deployment, with a PostgreSQL backend managed through Prisma.
+            </p>
+
+            <div className="px-8 pb-8 flex flex-wrap gap-2">
+              {bitprepTags.map((t) => (
+                <span
+                  key={t}
+                  className="font-mono text-[11px] tracking-wide px-3 py-1 rounded-full border transition-colors duration-200"
+                  style={{ border: '1px solid var(--border)', color: 'var(--muted)' }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = 'var(--muted)'
+                    e.currentTarget.style.color = 'var(--text)'
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = 'var(--border)'
+                    e.currentTarget.style.color = 'var(--muted)'
+                  }}
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+
+            <div className="grid grid-cols-3 border-t border-[var(--border)]">
+              {bitprepMetrics.map((m) => (
                 <div key={m.label} className="py-5 text-center border border-[var(--border)] border-t-0">
                   <div className="text-2xl font-extrabold tracking-tight" style={{ color: 'var(--accent)', letterSpacing: '-0.04em' }}>
                     {m.val}

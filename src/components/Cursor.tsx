@@ -62,11 +62,11 @@ export function Cursor() {
         className="fixed z-[9999] w-2.5 h-2.5 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-transform duration-200"
         style={{ background: 'var(--accent)' }}
       />
-      <div
+      {/* <div
         ref={ringRef}
         className="fixed z-[9998] w-9 h-9 rounded-full pointer-events-none -translate-x-1/2 -translate-y-1/2 transition-all duration-200"
         style={{ border: '1px solid rgba(163,230,53,0.35)' }}
-      />
+      /> */}
     </>
   )
 }

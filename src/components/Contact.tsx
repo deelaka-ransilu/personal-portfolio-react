@@ -47,15 +47,6 @@ export function Contact() {
           >
             LinkedIn
           </a>
-          <a
-            href="tel:+94712026132"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-mono text-sm transition-all duration-200 hover:-translate-y-0.5"
-            style={{ border: '1px solid var(--border)', color: 'var(--muted)' }}
-            onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'var(--muted)'; e.currentTarget.style.color = 'var(--text)' }}
-            onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'var(--border)'; e.currentTarget.style.color = 'var(--muted)' }}
-          >
-            +94 712 026 132
-          </a>
         </div>
       </div>
     </section>

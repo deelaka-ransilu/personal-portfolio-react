@@ -77,22 +77,6 @@ export function Hero() {
         >
           LinkedIn
         </a>
-        <a
-          href="/portfolio/Deelaka_Ransilu_DevOps_CV.pdf"
-          download
-          className="inline-flex items-center gap-2 px-6 py-3 rounded-full font-mono text-sm transition-all duration-200 hover:-translate-y-0.5"
-          style={{ border: '1px solid var(--border)', color: 'var(--muted)' }}
-          onMouseEnter={(e) => {
-            e.currentTarget.style.borderColor = 'var(--muted)'
-            e.currentTarget.style.color = 'var(--text)'
-          }}
-          onMouseLeave={(e) => {
-            e.currentTarget.style.borderColor = 'var(--border)'
-            e.currentTarget.style.color = 'var(--muted)'
-          }}
-        >
-          Download CV ↓
-        </a>
       </div>
 
       {/* scroll indicator */}

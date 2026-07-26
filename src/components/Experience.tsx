@@ -1,11 +1,11 @@
 import { useReveal } from '../hooks/useReveal'
 
 const bullets = [
-  'Monitored system performance and analysed logs to identify root causes and improve system stability',
-  'Managed user accounts, permissions, and access control under senior system administrator guidance',
-  'Performed routine system health checks and maintenance activities to ensure high availability',
-  'Handled incident escalation following SOPs with accurate reporting and documentation',
-  'Supported basic network connectivity troubleshooting and Gained hands-on exposure to IT infrastructure operations, system monitoring workflows, and incident management practices aligned with SRE principles',
+  'Provided L1/L2 technical support for enterprise POS and ERP systems, ensuring high availability in production environments',
+  'Performed SQL Server troubleshooting, query optimization, and database maintenance to resolve production issues',
+  'Executed system migrations and deployed software patches to live client environments with zero downtime',
+  'Conducted root cause analysis (RCA) for critical incidents, working closely with senior engineers on complex cases',
+  'Served as a technical escalation point for L1/L2 support, contributing to rapid incident resolution and SLA compliance',
 ]
 
 export function Experience() {
@@ -27,7 +27,7 @@ export function Experience() {
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-16 items-start">
           {/* meta — sticky on desktop */}
           <div ref={metaRef} className="md:sticky md:top-28">
-            <p className="font-mono text-xs mb-1" style={{ color: 'var(--muted)' }}>Jun 2024 – Jan 2025 · 7 months</p>
+            <p className="font-mono text-xs mb-1" style={{ color: 'var(--muted)' }}>Jul 2025 – Jan 2026 · 7 months</p>
             <p className="font-semibold text-base mb-1">myPOS Software Solutions</p>
             <p className="font-mono text-sm" style={{ color: 'var(--accent)' }}>Technical Support Executive</p>
           </div>
