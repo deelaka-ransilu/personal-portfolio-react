@@ -19,10 +19,10 @@ export function Hero() {
       className="relative flex flex-col justify-center min-h-screen px-12 pt-28 pb-16 max-w-6xl mx-auto overflow-hidden"
     >
       {/* background glow */}
-      <div
-        className="absolute top-[-200px] right-[-200px] w-[600px] h-[600px] pointer-events-none"
-        style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.06) 0%, transparent 70%)' }}
-      />
+      {/* <div
+    className="absolute top-[-300px] right-[-300px] w-[900px] h-[900px] pointer-events-none"
+    style={{ background: 'radial-gradient(circle, rgba(163,230,53,0.05) 0%, transparent 60%)' }}
+  /> */}
 
       {/* tag */}
       <p
