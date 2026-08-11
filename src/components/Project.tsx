@@ -2,16 +2,16 @@ import { useReveal } from '../hooks/useReveal'
 
 const tags = [
   'Spring Boot','Next.js','PostgreSQL','Linux','JWT Auth',
-  'REST API','PayHere','Google Calendar API','Cloudinary','Resend',
+  'REST API','PayHere','Google Calendar API','Cloudinary','Resend','Flyway',
 ]
 
 const metrics = [
-  { val: '66',    label: 'Functional Reqs' },
-  { val: '5+',    label: 'Integrations' },
-  { val: 'CI/CD', label: 'GitHub Actions' },
-  { val: 'OAuth', label: 'Google Auth' },
-  { val: 'CDN',   label: 'Cloudinary' },
-  { val: '27',    label: 'UI Screens' },
+  { val: '66',      label: 'Functional Reqs' },
+  { val: '5+',      label: 'Integrations' },
+  { val: 'Flyway',  label: 'DB Migrations' },
+  { val: 'OAuth',   label: 'Google Auth' },
+  { val: 'CDN',     label: 'Cloudinary' },
+  { val: '27',      label: 'UI Screens' },
 ]
 
 const rsvpTags = [
@@ -29,17 +29,17 @@ const rsvpMetrics = [
 ]
 
 const bitprepTags = [
-  'Next.js', 'TypeScript', 'Prisma', 'PostgreSQL', 'Vercel',
+  'Next.js', 'TypeScript', 'Supabase', 'PostgreSQL', 'Vercel',
   'Tailwind CSS',
 ]
 
 const bitprepMetrics = [
-  { val: 'Live',   label: 'Production' },
-  { val: 'Free',   label: 'For Students' },
-  { val: 'CI/CD',  label: 'Vercel Deploy' },
-  { val: 'Prisma', label: 'ORM' },
-  { val: 'PG',     label: 'PostgreSQL DB' },
-  { val: 'UOM',    label: 'BIT Community' },
+  { val: 'Live',     label: 'Production' },
+  { val: 'Free',     label: 'For Students' },
+  { val: 'CI/CD',    label: 'Vercel Deploy' },
+  { val: 'Supabase', label: 'Backend' },
+  { val: 'RLS',      label: 'Row Security' },
+  { val: 'UOM',      label: 'BIT Community' },
 ]
 
 export function Project() {
@@ -81,9 +81,14 @@ export function Project() {
             data-cursor-hover
           >
             <div className="p-8 pb-0 flex justify-between items-start flex-wrap gap-4">
-              <h3 className="text-2xl font-bold tracking-tight" style={{ letterSpacing: '-0.03em' }}>
-                Online Dress Rental &<br />E-Commerce Platform
-              </h3>
+              <div>
+                <h3 className="text-2xl font-bold tracking-tight" style={{ letterSpacing: '-0.03em' }}>
+                  Online Dress Rental &<br />E-Commerce Platform
+                </h3>
+                <p className="font-mono text-[11px] mt-2" style={{ color: 'var(--muted)' }}>
+                  (Boutique Management System)
+                </p>
+              </div>
               <span
                 className="font-mono text-[11px] tracking-wide px-3 py-1.5 rounded-full border"
                 style={{ background: 'rgba(163,230,53,0.08)', color: 'var(--accent)', borderColor: 'rgba(163,230,53,0.25)' }}
@@ -169,7 +174,7 @@ export function Project() {
             <p className="px-8 pt-4 pb-6 text-sm leading-7 max-w-2xl" style={{ color: 'var(--muted)' }}>
               A free exam-prep platform built for University of Moratuwa BIT students, covering quizzes and
               study materials across multiple subjects. Built and maintained end-to-end, from schema design
-              to production deployment, with a PostgreSQL backend managed through Prisma.
+              to production deployment, with a Supabase (PostgreSQL) backend and Row Level Security.
             </p>
 
             <div className="px-8 pb-8 flex flex-wrap gap-2">

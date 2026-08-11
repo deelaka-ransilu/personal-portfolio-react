@@ -2,10 +2,17 @@ import { useReveal } from '../hooks/useReveal'
 
 const bullets = [
   'Provided L1/L2 technical support for enterprise POS and ERP systems, ensuring high availability in production environments',
-  'Performed SQL Server troubleshooting, query optimization, and database maintenance to resolve production issues',
+  'Performed SQL Server troubleshooting, query optimization, and database maintenance to resolve production incidents',
   'Executed system migrations and deployed software patches to live client environments with zero downtime',
-  'Conducted root cause analysis (RCA) for critical incidents, working closely with senior engineers on complex cases',
+  'Conducted root cause analysis (RCA) for critical incidents, collaborating with senior engineers on complex cases and documenting resolutions',
   'Served as a technical escalation point for L1/L2 support, contributing to rapid incident resolution and SLA compliance',
+]
+
+const stats = [
+  { val: '7mo',  label: 'Tenure' },
+  { val: 'L1/L2', label: 'Support Tier' },
+  { val: 'RCA',  label: 'Root Cause Analysis' },
+  { val: '0',    label: 'Downtime Migrations' },
 ]
 
 export function Experience() {
@@ -13,16 +20,34 @@ export function Experience() {
   const titleRef  = useReveal(1)
   const metaRef   = useReveal()
   const detailRef = useReveal(1)
+  const statsRef  = useReveal(2)
 
   return (
     <section id="experience" className="py-28 px-12">
       <div className="max-w-6xl mx-auto">
         <p ref={labelRef} className="font-mono text-[10px] tracking-[.22em] uppercase mb-3" style={{ color: 'var(--accent)' }}>
-          Where I've worked
+          Production Support
         </p>
-        <h2 ref={titleRef} className="font-bold tracking-tight mb-16" style={{ fontSize: 'clamp(2rem,4vw,3rem)', letterSpacing: '-0.03em' }}>
+        <h2 ref={titleRef} className="font-bold tracking-tight mb-12" style={{ fontSize: 'clamp(2rem,4vw,3rem)', letterSpacing: '-0.03em' }}>
           Experience
         </h2>
+
+        <div
+          ref={statsRef}
+          className="grid grid-cols-2 sm:grid-cols-4 gap-px rounded-2xl overflow-hidden mb-16"
+          style={{ background: 'var(--border)', border: '1px solid var(--border)' }}
+        >
+          {stats.map((s) => (
+            <div key={s.label} className="py-5 text-center" style={{ background: 'var(--bg2)' }}>
+              <div className="text-2xl font-extrabold tracking-tight" style={{ color: 'var(--accent)', letterSpacing: '-0.04em' }}>
+                {s.val}
+              </div>
+              <div className="font-mono text-[10px] tracking-widest uppercase mt-1" style={{ color: 'var(--muted)' }}>
+                {s.label}
+              </div>
+            </div>
+          ))}
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-[1fr_2fr] gap-10 md:gap-16 items-start">
           {/* meta — sticky on desktop */}

@@ -41,14 +41,12 @@ export function Hero() {
       </h1>
 
       {/* desc */}
-      <p
-        className="max-w-lg text-lg leading-8 mb-10"
-        style={{ color: 'var(--muted)', ...anim(250) }}
-      >
-        Final-year BIT student at University of Moratuwa. I build and deploy
-        production-grade systems on Linux — from REST APIs to full-stack platforms
-        with CI/CD pipelines, containerization, and cloud integrations. Passionate
-        about DevOps, site reliability, and modern infrastructure.
+      <p className="max-w-lg text-lg leading-8 mb-10" style={{ color: 'var(--muted)', ...anim(250) }}>
+        Final-year BIT student at University of Moratuwa with hands-on production 
+        support experience — incident response, RCA, and SLA-driven troubleshooting 
+        on live enterprise systems. Building toward DevOps/SRE through Linux, 
+        containerization, and infrastructure-as-code, backed by full-stack projects 
+        I own end-to-end in production.
       </p>
 
       {/* CTAs */}

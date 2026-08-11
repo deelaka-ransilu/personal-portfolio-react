@@ -3,23 +3,23 @@ import { useReveal } from '../hooks/useReveal'
 const cards = [
   {
     icon: '[ ~ ]',
-    title: 'Linux & DevOps',
-    body: 'Ubuntu daily · CLI · users/permissions · process mgmt · Docker · GitHub Actions CI/CD · shell scripting · log analysis',
+    title: 'Linux & Scripting',
+    body: 'Ubuntu daily driver · shell scripting (Bash) · Docker · GitHub Actions CI/CD · Git & version control',
   },
   {
     icon: '{ }',
     title: 'Full-Stack Development',
-    body: 'Spring Boot · Java · REST API · JWT auth · RBAC · PostgreSQL · MSSQL · Maven·  Next.js · React · TypeScript · Tailwind CSS · shadcn/ui · REST integrations',
+    body: 'Spring Boot · Java · REST API · JWT auth · RBAC · PostgreSQL · MSSQL · Maven · Next.js · React · TypeScript · Tailwind CSS · shadcn/ui · REST integrations',
   },
   {
     icon: '</>',
-    title: 'Cloud & Tools',
-    body: 'AWS Free Tier · GitHub Actions · Docker · Git · Maven · Linux shell · basic networking (IP, DNS, HTTP)',
+    title: 'Cloud & Infrastructure',
+    body: 'AWS Cloud Practitioner (certified) · GCP Compute Engine · Kubernetes (kind) · Terraform/OpenTofu · Docker/Podman',
   },
   {
-    icon: '≈ py',
-    title: 'Python & Tools',
-    body: 'Python scripting · automation · Git · GitHub · Linux shell · basic networking · AWS fundamentals',
+    icon: '!',
+    title: 'Production Support',
+    body: 'L1/L2 incident response · SQL Server troubleshooting · root cause analysis (RCA) · SLA-driven resolution · zero-downtime deployments',
   },
 ]
 

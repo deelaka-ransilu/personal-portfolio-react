@@ -1,7 +1,7 @@
 const skills = [
   'Linux', 'Spring Boot', 'Next.js', 'PostgreSQL', 'Java',
   'Python', 'JavaScript', 'TypeScript', 'REST APIs', 'Git',
-  'JWT Auth', 'Maven', 'Ubuntu', 'DevOps',
+  'JWT Auth', 'Maven', 'AI-Assisted Dev', 'DevOps',
 ]
 
 const doubled = [...skills, ...skills]

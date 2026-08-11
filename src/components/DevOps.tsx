@@ -9,21 +9,21 @@ const items = [
   },
   {
     label: 'Containerization',
-    title: 'Docker — Spring Boot',
-    body: 'Containerized a Spring Boot REST API using Docker — wrote Dockerfile, built image, ran container, exposed ports.',
+    title: 'Docker & Podman',
+    body: 'Containerized a Spring Boot REST API with Docker — Dockerfile, image builds, container lifecycle. Podman lifecycle management via LFS162 labs.',
     tag: 'Hands-on',
   },
   {
-    label: 'Linux',
-    title: 'Ubuntu Daily Driver',
-    body: 'Daily development on Ubuntu — PostgreSQL management, Java process deployment, log monitoring, shell scripting, user/permission management.',
-    tag: 'Daily use',
+    label: 'Production Support',
+    title: 'Incident Response & RCA',
+    body: 'L1/L2 support on live POS/ERP systems — SQL Server troubleshooting, zero-downtime migrations and patch deployments, root cause analysis on critical incidents under SLA.',
+    tag: '7 months',
   },
   {
-    label: 'Cloud',
-    title: 'AWS Free Tier',
-    body: 'Exploring EC2, S3, and cloud fundamentals. Building toward production cloud deployments.',
-    tag: 'In progress',
+    label: 'Infrastructure',
+    title: 'Linux Foundation SRE (LFS162)',
+    body: 'GCP Compute Engine provisioning, Kubernetes cluster setup with kind, Terraform/OpenTofu IaC on GCP, Jenkins CI server setup, Prometheus/Grafana monitoring stack.',
+    tag: 'Coursework',
   },
 ]
 
